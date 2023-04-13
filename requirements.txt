@@ -1,0 +1,7 @@
+flask
+numpy
+pillow
+numba
+flask_login
+sqlalchemy
+sqlalchemy_serializer
