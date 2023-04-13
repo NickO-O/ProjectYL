@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ambedient Ligth Theme</title>
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #050505;
+}
+.cube0
+{
+    position: absolute;
+    width : 300px;
+    height: 300px;
+    top: 100px;
+    left:100px;
+    transform-style: preserve-3d;
+    animation: animate0 4s linear infinite;
+}
+@keyframes animate0
+{
+    0%
+    {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%
+    {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.cube0 div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cube0 div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    background: linear-gradient(#151515, #00ec00);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(149px); /*  aaaaa */;
+}
+.top0
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(150px)
+}
+.top0::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width : 300px;
+    height: 300px;
+    background: #0f0;
+    transform: translateZ(-380px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(0,255,0,0.2),
+    0 0 200px rgba(0,255,0,0.4),
+    0 0 200px rgba(0,255,0,0.4),
+    0 0 200px rgba(0,255,0,0.4),
+    0 0 200px rgba(0,255,0,0.4);
+}
+.cube1
+{
+    position: absolute;
+    width : 100px;
+    height: 100px;
+    top: 400px;
+    left: 1000px;
+    transform-style: preserve-3d;
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%
+    {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.cube1 div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cube1 div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    background: linear-gradient(#151515, #3f00ec);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(49px); /*  aaaaa */;
+}
+.top1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(50px)
+}
+.top1::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width : 100px;
+    height: 100px;
+    background: rgb(78, 78, 255);
+    transform: translateZ(-200px);
+    filter: blur(30px);
+    box-shadow: 0 0 120px rgba(0, 0, 255, 0.4),
+    0 0 200px rgba(0, 0, 255, 0.4),
+    0 0 200px rgba(0, 0, 255, 0.4),
+    0 0 200px rgba(0, 0, 255, 0.4),
+    0 0 200px rgba(0, 0, 255, 0.4);
+}
+
+.cube2
+{
+    position: absolute;
+    width : 200px;
+    height: 200px;
+    top: 100px;
+    left: 600px;
+    transform-style: preserve-3d;
+    animation: animate1 5s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+    100%
+    {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+}
+.cube2 div
+{
+    position: absloute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cube2 div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    background: linear-gradient(#151515, #ec0000);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(99px); /*  aaaaa */;
+}
+.top2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(100px)
+}
+.top2::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width : 200px;
+    height: 200px;
+    background: rgb(255, 78, 78);
+    transform: translateZ(-300px);
+    filter: blur(25px);
+    box-shadow: 0 0 120px rgba(252, 0, 0, 0.4),
+    0 0 200px rgba(252, 0, 0, 0.4),
+    0 0 200px rgba(252, 0, 0, 0.4),
+    0 0 200px rgba(252, 0, 0, 0.4),
+    0 0 200px rgba(252, 0, 0, 0.4);
+}
+    </style>
+</head>
+  <body>
+   <div class="cube0">
+    <div class="top0"></div>
+        <div>
+            <span style="--i:0";></span>
+            <span style="--i:1";></span>
+            <span style="--i:2";></span>
+            <span style="--i:3";></span>
+        </div>
+      </div>
+    <div class="cube1">
+        <div class="top1"></div>
+            <div>
+                <span style="--i:5";></span>
+                <span style="--i:6";></span>
+                <span style="--i:7";></span>
+                <span style="--i:8";></span>
+            </div>
+          </div>
+
+
+    <div class="cube2">
+        <div class="top2"></div>
+            <div>
+                <span style="--i:9";></span>
+                <span style="--i:10";></span>
+                <span style="--i:11";></span>
+                <span style="--i:12";></span>
+            </div>
+          </div>
+       </body>
+</html>

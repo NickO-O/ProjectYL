@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ambedient Ligth Theme</title>
+    <style>
+                *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #050505;
+}
+.cube0
+{
+    position: absolute;
+    width : {{size}}px;
+    height: {{size}}px;
+    top: 25%;
+    left:50%;
+    transform-style: preserve-3d;
+    animation: animate0 {{ speed }}s linear infinite;
+}
+@keyframes animate0
+{
+    0%
+    {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%
+    {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.cube0 div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cube0 div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    background: linear-gradient(#151515, {{ colorhex }});
+    transform: rotateY(calc(90deg * var(--i))) translateZ({{ size1 }}px); /*  aaaaa */;
+}
+.top0
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: {{size}}px;
+    height: {{size}}px;
+    background: #222;
+    transform: rotateX(90deg) translateZ({{ size2 }}px)
+}
+.top0::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width : {{size}}px;
+    height: {{size}}px;
+    background: {{ colorhex }};
+    transform: translateZ(-{{ height }}px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba({{ color }},0.2}),
+    0 0 200px rgba({{ color }},0.4),
+    0 0 200px rgba({{ color }},0.4),
+    0 0 200px rgba({{ color }},0.4),
+    0 0 200px rgba({{ color }},0.4);
+}
+    </style>
+</head>
+  <body>
+   <div class="cube0">
+    <div class="top0"></div>
+        <div>
+            <span style="--i:0";></span>
+            <span style="--i:1";></span>
+            <span style="--i:2";></span>
+            <span style="--i:3";></span>
+        </div>
+      </div>
+  </body>
+</html>
